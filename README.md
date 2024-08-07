@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
 
-```bash
+command promt
+
 npm run dev
-# or
+# or 
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Homepage: Lists all posts with titles and excerpts.
+Post Detail Page: Displays the full post details along with comments for that post.
+Responsive Design: Uses Material-UI for styling and ensures a responsive layout.
+Unit Tests: Includes unit tests for components using Jest and React Testing Library.
 
-## Learn More
+Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+app/ - Contains Next.js pages and API routes.
+components/ - Reusable React components.
+public/ - Static assets such as images.
+styles/ - Global and component-specific styles.
+jest.config.js - Jest configuration file.
+babel.config.js - Babel configuration file for transforming JavaScript and JSX.
+tsconfig.json - TypeScript configuration file.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Adding New Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Create New Pages: Add new pages in the app/ directory.
+Add Components: Place reusable components in the components/ directory.
+Update Styling: Modify styles in the styles/ directory or create new ones as needed
 
-## Deploy on Vercel
+API Endpoints
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Posts: https://jsonplaceholder.typicode.com/posts
+Comments: https://jsonplaceholder.typicode.com/comments
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Troubleshooting
+Error: React is not defined: Ensure that React is imported in your test files if you're using JSX.
+Build Issues: Verify that your configuration files (jest.config.js, babel.config.js, tsconfig.json) are set up correctly.
+
